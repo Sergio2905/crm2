@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content="default">
+  <title>BatteryCRM</title>
+  <link href="img/logo.png" rel="icon"/>
+  <link rel="preload" href="fonts/FuturaNewRegular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/FuturaNewMedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/FuturaNewDemi.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/FuturaNewBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="settings-page">
+    <div class="wrapper">
+        <header>
+  <div class="header">
+    <div class="header__title">Настройки</div>
+    <a class="header__logo" href="$">
+      <svg width='8' height='16'>
+        <use href='img/sprite/sprite.svg#logo-battery'></use>
+      </svg>
+      <svg width='122' height='13'>
+        <use href='img/sprite/sprite.svg#logo-title'></use>
+      </svg>
+    </a>
+    <div class="header__btns">
+      <a href="./" class="header__btn">
+        <svg width='13.7' height='13.7'>
+          <use href='img/sprite/sprite.svg#setting'></use>
+        </svg>
+      </a>
+      <div class="header__user-btn">
+        <button class="header__btn">
+          <svg width='13.7' height='13.7'>
+            <use href='img/sprite/sprite.svg#user'></use>
+          </svg>
+        </button>
+        <div class="header__user-settings">
+          <div class="user">
+            <div class="user__personal">
+              <div class="user__avatar">
+                <picture>
+                  <source type='image/webp' srcset='img/agnes.webp'>
+                  <img width='40' height='40' src='img/agnes.png' alt='Агнес Толстопятко'>
+                </picture>
+              </div>
+              <div class="user__name">Агнес Толстопятко</div>
+            </div>
+            <ul class="user__btns">
+              <li class="user__btns-item">
+                <button class="user__btn">
+                  <svg width='14' height='14'>
+                    <use href='img/sprite/sprite.svg#account'></use>
+                  </svg>
+                  <span>Личный кабинет</span>
+                </button>
+              </li>
+              <li class="user__btns-item">
+                <button class="user__btn">
+                  <svg width='14' height='14'>
+                    <use href='img/sprite/sprite.svg#theme'></use>
+                  </svg>
+                  <span>Темная тема</span>
+                </button>
+              </li>
+              <li class="user__btns-item">
+                <button class="user__btn">
+                  <svg width='14' height='14'>
+                    <use href='img/sprite/sprite.svg#exit'></use>
+                  </svg>
+                  <span>Выйти</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+        <main class="main">
+
+            <section class="navigation">
+                <div class="navigation__wrapper">
+                    <ul class="navigation__controls">
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn">
+                                <svg width='19' height='19'>
+                                    <use href='img/sprite/sprite.svg#bag'></use>
+                                </svg>
+                                <span>Заказы</span>
+                            </div>
+                        </li>
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn">
+                                <svg width='19' height='19'>
+                                    <use href='img/sprite/sprite.svg#clients'></use>
+                                </svg>
+                                <span>Клиенты</span>
+                            </div>
+                        </li>
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn">
+                                <svg width='19' height='19'>
+                                    <use href='img/sprite/sprite.svg#shop'></use>
+                                </svg>
+                                <span>Товары</span>
+                            </div>
+                        </li>
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn">
+                                <svg width='19' height='19'>
+                                    <use href='img/sprite/sprite.svg#wallet'></use>
+                                </svg>
+                                <span>Финансы</span>
+                            </div>
+                        </li>
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn active">
+                                <svg width='19' height='19'>
+                                    <use href='img/sprite/sprite.svg#tag'></use>
+                                </svg>
+                                <span>Соответствия товаров</span>
+                            </div>
+                        </li>
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn navigation-analytics">
+                                <button type="button" class="navigation-analytics__btn">
+                                    <svg width='19' height='19'>
+                                        <use href='img/sprite/sprite.svg#activity'></use>
+                                    </svg>
+                                    <span>Аналитика</span>
+                                </button>
+                                <div class="navigation-analytics__menu">
+                                    <ul class="navigation-analytics__list">
+                                        <li class="navigation-analytics__item">
+                                            <a href="general.html" class="navigation-analytics__link">Общая</a>
+                                        </li>
+                                        <li class="navigation-analytics__item">
+                                            <a href="products.html" class="navigation-analytics__link">Товары</a>
+                                        </li>
+                                        <li class="navigation-analytics__item">
+                                            <a href="finance.html" class="navigation-analytics__link">Финансы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="content">
+                <h1 class="content__title-mobile">Склады</h1>
+
+                <div class="content__sidebar sidebar">
+                    <ul class="sidebar__list">
+                        <li class="sidebar__item">
+                            <a href="settings.html" class="sidebar__link">
+                                <svg>
+                                    <use href='img/sprite/sprite.svg#shopping-cart'></use>
+                                </svg>
+                                <span>Товары</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="resources.html" class="sidebar__link">
+                                <svg>
+                                    <use href='img/sprite/sprite.svg#store'></use>
+                                </svg>
+                                <span>Ресурсы продаж</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item active">
+                            <a href="warehouses.html" class="sidebar__link">
+                                <svg>
+                                    <use href='img/sprite/sprite.svg#box'></use>
+                                </svg>
+                                <span>Склады</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="matrix.html" class="sidebar__link">
+                                <svg>
+                                    <use href='img/sprite/sprite.svg#calculator'></use>
+                                </svg>
+                                <span>Матрица прибыли</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button type="button" class="minimize-btn">
+                        <svg>
+                            <use xlink: href="img/sprite/sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="content__body">
+
+                    <div class="content__header header-content">
+                        <h2 class="header-content__title">Склады</h2>
+
+                        <div class="header-content__btns">
+                            <button class="header-content__btn btn-blue" data-path="warehouse-add">
+                                <svg>
+                                    <use xlink: href="img/sprite/sprite.svg#plus"></use>
+                                </svg>
+                                <span>Добавить склад</span>
+                            </button>
+                            <button class="header-content__btn btn-white" data-path="warehouse-refresh-all">
+                                Обновить все склады
+                            </button>
+                        </div>
+                    </div>
+
+                    <h3 class="content__subtitle">Список складов</h3>
+
+                    <div class="content__table content__table-warehouses table">
+                        <div class="table__wrapp">
+                            <div class="table__product">
+                                <ul class="table__product-list">
+                                    <li class="table__product-item" data-sticky="sticky">
+                                        <button class="table__product-amount table__btn">
+                                            <span>#</span>
+                                            <svg width='14' height='14'>
+                                                <use href='img/sprite/sprite.svg#sorting'></use>
+                                            </svg>
+                                        </button>
+                                        <button class="table__product-title table__btn">
+                                            <span>Название</span>
+                                            <svg width='14' height='14'>
+                                                <use href='img/sprite/sprite.svg#sorting'></use>
+                                            </svg>
+                                        </button>
+                                        <button class="table__product-whois table__btn">
+                                            <span>Чей</span>
+                                            <svg width='14' height='14'>
+                                                <use href='img/sprite/sprite.svg#sorting'></use>
+                                            </svg>
+                                        </button>
+                                        <button class="table__product-source table__btn">
+                                            <span>Источник</span>
+                                            <svg width='14' height='14'>
+                                                <use href='img/sprite/sprite.svg#sorting'></use>
+                                            </svg>
+                                        </button>
+                                        <button class="table__product-count table__btn">
+                                            <span>Кол-во товаров</span>
+                                            <svg width='14' height='14'>
+                                                <use href='img/sprite/sprite.svg#sorting'></use>
+                                            </svg>
+                                        </button>
+                                        <button class="table__product-added table__btn">
+                                            <span>Добавлено</span>
+                                            <svg width='14' height='14'>
+                                                <use href='img/sprite/sprite.svg#sorting'></use>
+                                            </svg>
+                                        </button>
+                                        <button class="table__product-priority table__btn">
+                                            <span>Приоритет</span>
+                                            <svg width='14' height='14'>
+                                                <use href='img/sprite/sprite.svg#sorting'></use>
+                                            </svg>
+                                        </button>
+                                        <button class="table__product-status table__btn">
+                                            <span>Статус</span>
+                                        </button>
+                                        <button class="table__product-autorefresh table__btn">
+                                            <span>Автообновление</span>
+                                        </button>
+                                        <button class="table__product-actions table__btn">
+                                            <span>Действие</span>
+                                        </button>
+                                    </li>
+
+                                    <li class="table__product-item available">
+                                        <div class="table__product-amount">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="table__product-title">
+                                            <span>iBattery</span>
+                                            <div class="table__product-titlefull">iBattery
+                                            </div>
+                                        </div>
+                                        <div class="table__product-whois">
+                                            <span>свой</span>
+                                            <div class="table__product-titlefull">свой</div>
+                                        </div>
+                                        <div class="table__product-source">
+                                            <span>JSON-файл</span>
+                                            <div class="table__product-titlefull">JSON-файл</div>
+                                        </div>
+                                        <div class="table__product-count">
+                                            <span>10123</span>
+                                            <div class="table__product-titlefull">10123</div>
+                                        </div>
+                                        <div class="table__product-added">
+                                            <span>10123</span>
+                                            <div class="table__product-titlefull">10123</div>
+                                        </div>
+                                        <div class="table__product-priority">
+                                            <span>2</span>
+                                            <div class="table__product-titlefull">2</div>
+                                        </div>
+                                        <div class="table__product-status">
+                                            <button class="table__product-switcher on">Вкл</button>
+                                            <button class="table__product-switcher off">Выкл</button>
+                                        </div>
+                                        <div class="table__product-autorefresh autorefresh">
+                                            <div class="autorefresh__info-block">
+                                                <div class="autorefresh__input-block">
+                                                    <input type="text" class="autorefresh__input" value="60">
+                                                </div>
+                                            </div>
+                                            <div class="autorefresh__info-block">
+                                                <div class="autorefresh__select autorefresh__select--time select">
+                                                    <div class="autorefresh__select-header">
+                                                        <input type="hidden" value="1">
+                                                        <span class="autorefresh__select-current select__current">
+                                                            мин
+                                                        </span>
+                                                        <svg width='8' height='8'>
+                                                            <use href='img/sprite/sprite.svg#arrow'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <ul class="autorefresh__select-body select__body">
+                                                        <li class="autorefresh__select-item select__item" data-id="1"
+                                                            data-choice='choosen'>
+                                                            сек
+                                                        </li>
+                                                        <li class="autorefresh__select-item select__item" data-id="2"
+                                                            data-choice='choosen'>
+                                                            мин
+                                                        </li>
+                                                        <li class="autorefresh__select-item select__item" data-id="3"
+                                                            data-choice='choosen'>час
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="autorefresh__unavailable">
+                                                недоступно
+                                            </div>
+                                        </div>
+                                        <div class="table__product-actions">
+                                            <div class="table__actions">
+                                                <button class="table__actions-btn" data-path="warehouse-edit">
+                                                    <svg>
+                                                        <use xlink: href="img/sprite/sprite.svg#edit"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="table__actions-btn" data-path="warehouse-refresh">
+                                                    <svg>
+                                                        <use xlink: href="img/sprite/sprite.svg#refresh"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="table__actions-btn" data-path="warehouse-delete">
+                                                    <svg>
+                                                        <use xlink: href="img/sprite/sprite.svg#delete"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="table__product-item unavailable">
+                                        <div class="table__product-amount">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="table__product-title">
+                                            <span>iBattery</span>
+                                            <div class="table__product-titlefull">iBattery
+                                            </div>
+                                        </div>
+                                        <div class="table__product-whois">
+                                            <span>свой</span>
+                                            <div class="table__product-titlefull">свой</div>
+                                        </div>
+                                        <div class="table__product-source">
+                                            <span>JSON-файл</span>
+                                            <div class="table__product-titlefull">JSON-файл</div>
+                                        </div>
+                                        <div class="table__product-count">
+                                            <span>10123</span>
+                                            <div class="table__product-titlefull">10123</div>
+                                        </div>
+                                        <div class="table__product-added">
+                                            <span>10123</span>
+                                            <div class="table__product-titlefull">10123</div>
+                                        </div>
+                                        <div class="table__product-priority">
+                                            <span>2</span>
+                                            <div class="table__product-titlefull">2</div>
+                                        </div>
+                                        <div class="table__product-status">
+                                            <button class="table__product-switcher on">Вкл</button>
+                                            <button class="table__product-switcher off">Выкл</button>
+                                        </div>
+                                        <div class="table__product-autorefresh autorefresh">
+                                            <div class="autorefresh__info-block">
+                                                <div class="autorefresh__input-block">
+                                                    <input type="text" class="autorefresh__input" value="60">
+                                                </div>
+                                            </div>
+                                            <div class="autorefresh__info-block">
+                                                <div class="autorefresh__select autorefresh__select--time select">
+                                                    <div class="autorefresh__select-header">
+                                                        <input type="hidden" value="1">
+                                                        <span class="autorefresh__select-current select__current">
+                                                            мин
+                                                        </span>
+                                                        <svg width='8' height='8'>
+                                                            <use href='img/sprite/sprite.svg#arrow'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <ul class="autorefresh__select-body select__body">
+                                                        <li class="autorefresh__select-item select__item" data-id="1"
+                                                            data-choice='choosen'>
+                                                            сек
+                                                        </li>
+                                                        <li class="autorefresh__select-item select__item" data-id="2"
+                                                            data-choice='choosen'>
+                                                            мин
+                                                        </li>
+                                                        <li class="autorefresh__select-item select__item" data-id="3"
+                                                            data-choice='choosen'>час
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="autorefresh__unavailable">
+                                                недоступно
+                                            </div>
+                                        </div>
+                                        <div class="table__product-actions">
+                                            <div class="table__actions">
+                                                <a href="comparison.html" class="table__actions-btn">
+                                                    <svg>
+                                                        <use xlink: href="img/sprite/sprite.svg#notes"></use>
+                                                    </svg>
+                                                </a>
+                                                <button class="table__actions-btn" data-path="warehouse-edit">
+                                                    <svg>
+                                                        <use xlink: href="img/sprite/sprite.svg#edit"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="table__actions-btn" data-path="warehouse-refresh">
+                                                    <svg>
+                                                        <use xlink: href="img/sprite/sprite.svg#refresh"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="table__actions-btn" data-path="warehouse-delete">
+                                                    <svg>
+                                                        <use xlink: href="img/sprite/sprite.svg#delete"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="table__product-item available">
+                                        <div class="table__product-amount">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="table__product-title">
+                                            <span>iBattery</span>
+                                            <div class="table__product-titlefull">iBattery
+                                            </div>
+                                        </div>
+                                        <div class="table__product-whois">
+                                            <span>свой</span>
+                                            <div class="table__product-titlefull">свой</div>
+                                        </div>
+                                        <div class="table__product-source">
+                                            <span>JSON-файл</span>
+                                            <div class="table__product-titlefull">JSON-файл</div>
+                                        </div>
+                                        <div class="table__product-count">
+                                            <span>10123</span>
+                                            <div class="table__product-titlefull">10123</div>
+                                        </div>
+                                        <div class="table__product-added">
+                                            <span>10123</span>
+                                            <div class="table__product-titlefull">10123</div>
+                                        </div>
+                                        <div class="table__product-priority">
+                                            <span>2</span>
+                                            <div class="table__product-titlefull">2</div>
+                                        </div>
+                                        <div class="table__product-status">
+                                            <button class="table__product-switcher on">Вкл</button>
+                                            <button class="table__product-switcher off">Выкл</button>
+                                        </div>
+                                        <div class="table__product-autorefresh autorefresh">
+                                            <div class="autorefresh__info-block">
+                                                <div class="autorefresh__input-block">
+                                                    <input type="text" class="autorefresh__input" value="60">
+                                                </div>
+                                            </div>
+                                            <div class="autorefresh__info-block">
+                                                <div class="autorefresh__select autorefresh__select--time select">
+                                                    <div class="autorefresh__select-header">
+                                                        <input type="hidden" value="1">
+                                                        <span class="autorefresh__select-current select__current">
+                                                            мин
+                                                        </span>
+                                                        <svg width='8' height='8'>
+                                                            <use href='img/sprite/sprite.svg#arrow'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <ul class="autorefresh__select-body select__body">
+                                                        <li class="autorefresh__select-item select__item" data-id="1"
+                                                            data-choice='choosen'>
+                                                            сек
+                                                        </li>
+                                                        <li class="autorefresh__select-item select__item" data-id="2"
+                                                            data-choice='choosen'>
+                                                            мин
+                                                        </li>
+                                                        <li class="autorefresh__select-item select__item" data-id="3"
+                                                            data-choice='choosen'>час
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="autorefresh__unavailable">
+                                                недоступно
+                                            </div>
+                                        </div>
+                                        <div class="table__product-actions">
+                                            <div class="table__actions">
+                                                <a href="comparison.html" class="table__actions-btn">
+                                                    <svg>
+                                                        <use xlink: href="img/sprite/sprite.svg#notes"></use>
+                                                    </svg>
+                                                </a>
+                                                <button class="table__actions-btn" data-path="warehouse-edit">
+                                                    <svg>
+                                                        <use xlink: href="img/sprite/sprite.svg#edit"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="table__actions-btn" data-path="warehouse-refresh">
+                                                    <svg>
+                                                        <use xlink: href="img/sprite/sprite.svg#refresh"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="table__actions-btn" data-path="warehouse-delete">
+                                                    <svg>
+                                                        <use xlink: href="img/sprite/sprite.svg#delete"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__btn-right">
+                        <button class="content__btn content__btn-warehouses btn-blue">
+                            <span>Сохранить</span>
+                        </button>
+                    </div>
+
+                    <div class="modal">
+                        <div class="modal__container" data-target="warehouse-refresh">
+                            <div class="modal__wrapper download">
+                                <div class="modal__title">Обновить склад</div>
+
+                                <div class="modal__message">
+                                    Подтвердите загрузку данных для текущего склада. При подтверждении, загрузка
+                                    начнется в фоне и Вы получите
+                                    уведомление об окончании.
+                                </div>
+
+                                <div class="modal__bottom">
+                                    <button type="button" class="modal__btn modal__btn--download">Подтвердить</button>
+                                    <button type="button" class="modal__btn modal-close">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="warehouse-refresh-all">
+                            <div class="modal__wrapper download">
+                                <div class="modal__title">Обновить все склады</div>
+
+                                <div class="modal__message">
+                                    Подтвердите загрузку данных информации всех доступных складов. При подтверждении,
+                                    загрузка начнется в фоне и Вы
+                                    получите уведомление об окончании.
+                                </div>
+
+                                <div class="modal__bottom">
+                                    <button type="button" class="modal__btn modal__btn--download">Подтвердить</button>
+                                    <button type="button" class="modal__btn modal-close">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="warehouse-show-all">
+                            <div class="modal__wrapper download">
+                                <div class="modal__title">Раскрыть категории</div>
+
+                                <div class="modal__message">
+                                    Подтвердите раскрытие всех подкатегорий 1-го и 2-го уровней.
+                                </div>
+
+                                <div class="modal__bottom">
+                                    <button type="button"
+                                        class="modal__btn modal__btn--download btn-show-all">Подтвердить</button>
+                                    <button type="button" class="modal__btn modal-close">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="warehouse-delete">
+                            <div class="modal__wrapper download">
+                                <div class="modal__title">Удалить склад</div>
+
+                                <div class="modal__message">
+                                    Подтвердите удаление всех данных для текущего склада. При подтверждении, вся
+                                    информация о данном складе будет
+                                    безвозвратно удалена.
+                                </div>
+
+                                <div class="modal__bottom">
+                                    <button type="button" class="modal__btn modal__btn--download">Подтвердить</button>
+                                    <button type="button" class="modal__btn modal-close">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="warehouse-add">
+                            <div class="modal__wrapper edit">
+                                <div class="modal__close modal-close">
+                                    <svg width='24' height='24'>
+                                        <use href='img/sprite/sprite.svg#close'></use>
+                                    </svg>
+                                </div>
+
+                                <div class="modal__title">Добавить новый склад</div>
+
+                                <form class="modal__form form-modal">
+
+                                    <div class="form-modal__catalog">
+                                        <div class="form-modal__info-block">
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Название склада</span>
+                                                <div class="form-modal__input-wrapper">
+                                                    <input type="text" class="form-modal__input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-modal__info-block">
+                                            <div class="form__title">
+                                                Источник данных
+                                            </div>
+                                            <div class="form-modal__select form-modal__select--catalog select">
+                                                <div class="form-modal__select-header">
+                                                    <input type="hidden" value="1">
+                                                    <span class="form-modal__select-current select__current">
+                                                        YML-файл
+                                                    </span>
+                                                    <svg width='12' height='12'>
+                                                        <use href='img/sprite/sprite.svg#arrow'></use>
+                                                    </svg>
+                                                </div>
+                                                <ul class="form-modal__select-body select__body">
+                                                    <li class="form-modal__select-item select__item" data-id="1"
+                                                        data-choice='choosen'>YML-файл
+                                                    </li>
+                                                    <li class="form-modal__select-item select__item" data-id="2"
+                                                        data-choice='choosen'>XML-файл
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-modal__autorefresh">
+                                        <div class="form-modal__info-block">
+                                            <label class="filter__checkbox-label ">
+                                                <input class="filter__checkbox-input" type="checkbox"
+                                                    name="auto-refresh">
+                                                <span class="filter__checkbox-name">Включить</span>
+                                            </label>
+                                            <div class="autorefresh__input-block">
+                                                <input type="text" class="autorefresh__input" value="60">
+                                            </div>
+                                            <div class="autorefresh__info-block">
+                                                <div class="autorefresh__select autorefresh__select--time select">
+                                                    <div class="autorefresh__select-header">
+                                                        <input type="hidden" value="1">
+                                                        <span class="autorefresh__select-current select__current">
+                                                            мин
+                                                        </span>
+                                                        <svg width='8' height='8'>
+                                                            <use href='img/sprite/sprite.svg#arrow'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <ul class="autorefresh__select-body select__body">
+                                                        <li class="autorefresh__select-item select__item" data-id="1"
+                                                            data-choice='choosen'>
+                                                            сек
+                                                        </li>
+                                                        <li class="autorefresh__select-item select__item" data-id="2"
+                                                            data-choice='choosen'>
+                                                            мин
+                                                        </li>
+                                                        <li class="autorefresh__select-item select__item" data-id="3"
+                                                            data-choice='choosen'>час
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-modal__info-block">
+                                            <div class="autorefresh__input-block">
+                                                <div class="form-modal__input-name">Приоритет</div>
+                                                <input type="text" class="autorefresh__input">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-modal__link">
+                                        <h3 class="form-modal__subtitle">Ссылка на файл</h3>
+                                        <div class="form-modal__info-block">
+                                            <div class="form-modal__input-block">
+                                                <div class="form-modal__input-wrapper">
+                                                    <input type="text" class="form-modal__input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-modal__tags">
+                                        <h3 class="form-modal__subtitle">Соответствие тегов (YML)</h3>
+                                        <div class="form-modal__info-block">
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Название товара</span>
+                                                <input type="text" class="form-modal__input">
+                                            </div>
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Артикул</span>
+                                                <input type="text" class="form-modal__input">
+                                            </div>
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Цена</span>
+                                                <input type="text" class="form-modal__input">
+                                            </div>
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Наличие</span>
+                                                <input type="text" class="form-modal__input">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-modal__extra">
+                                        <h3 class="form-modal__subtitle">Дополнительные настройки</h3>
+                                        <div class="form-modal__info-wrapper">
+                                            <div class="form-modal__info-block">
+                                                <div class="form__title">
+                                                    Тип склада
+                                                </div>
+                                                <div class="form-modal__select form-modal__select--warehouse select">
+                                                    <div class="form-modal__select-header">
+                                                        <input type="hidden" value="1">
+                                                        <span class="form-modal__select-current select__current">
+                                                            партнерский
+                                                        </span>
+                                                        <svg width='12' height='12'>
+                                                            <use href='img/sprite/sprite.svg#arrow'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <ul class="form-modal__select-body select__body">
+                                                        <li class="form-modal__select-item select__item" data-id="1"
+                                                            data-choice='choosen'>партнерский
+                                                        </li>
+                                                        <li class="form-modal__select-item select__item" data-id="2"
+                                                            data-choice='choosen'>свой
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-modal__info-block">
+                                                <div class="form__title">
+                                                    Валюта
+                                                </div>
+                                                <div class="form-modal__select form-modal__select--warehouse select">
+                                                    <div class="form-modal__select-header">
+                                                        <input type="hidden" value="1">
+                                                        <span class="form-modal__select-current select__current">
+                                                            Доллар USD
+                                                        </span>
+                                                        <svg width='12' height='12'>
+                                                            <use href='img/sprite/sprite.svg#arrow'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <ul class="form-modal__select-body select__body">
+                                                        <li class="form-modal__select-item select__item" data-id="1"
+                                                            data-choice='choosen'>Доллар USD
+                                                        </li>
+                                                        <li class="form-modal__select-item select__item" data-id="2"
+                                                            data-choice='choosen'>Гривна UAH
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-modal__info-block">
+                                                <div class="form__title">
+                                                    Курс
+                                                </div>
+                                                <div class="form-modal__select form-modal__select--warehouse select">
+                                                    <div class="form-modal__select-header">
+                                                        <input type="hidden" value="1">
+                                                        <span class="form-modal__select-current select__current">
+                                                            свой
+                                                        </span>
+                                                        <svg width='12' height='12'>
+                                                            <use href='img/sprite/sprite.svg#arrow'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <ul class="form-modal__select-body select__body">
+                                                        <li class="form-modal__select-item select__item" data-id="1"
+                                                            data-choice='choosen'>свой
+                                                        </li>
+                                                        <li class="form-modal__select-item select__item" data-id="2"
+                                                            data-choice='choosen'>Партнерский
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-modal__info-block">
+                                                <div class="form__title">
+                                                    Источник курса
+                                                </div>
+                                                <div class="form-modal__select form-modal__select--warehouse select">
+                                                    <div class="form-modal__select-header">
+                                                        <input type="hidden" value="1">
+                                                        <span class="form-modal__select-current select__current">
+                                                            YML-файл
+                                                        </span>
+                                                        <svg width='12' height='12'>
+                                                            <use href='img/sprite/sprite.svg#arrow'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <ul class="form-modal__select-body select__body">
+                                                        <li class="form-modal__select-item select__item" data-id="1"
+                                                            data-choice='choosen'>YML-файл
+                                                        </li>
+                                                        <li class="form-modal__select-item select__item" data-id="2"
+                                                            data-choice='choosen'>XML-файл
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-modal__info-block">
+                                                <div class="form-modal__input-block">
+                                                    <span class="form-modal__input-name">Ссылка</span>
+                                                    <input type="text" class="form-modal__input">
+                                                </div>
+                                            </div>
+                                            <div class="form-modal__info-block">
+                                                <div class="form-modal__input-block">
+                                                    <span class="form-modal__input-name">Тэг</span>
+                                                    <input type="text" class="form-modal__input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                                <div class="modal__bottom">
+                                    <button type="button" class="modal__btn modal__btn--download">Сохранить</button>
+                                    <button type="button" class="modal__btn modal-close">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="warehouse-edit">
+                            <div class="modal__wrapper edit">
+                                <div class="modal__close modal-close">
+                                    <svg width='24' height='24'>
+                                        <use href='img/sprite/sprite.svg#close'></use>
+                                    </svg>
+                                </div>
+
+                                <div class="modal__title">Работа со складом</div>
+
+                                <form class="modal__form form-modal">
+
+                                    <div class="form-modal__catalog">
+                                        <div class="form-modal__info-block">
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Название склада</span>
+                                                <div class="form-modal__input-wrapper">
+                                                    <input type="text" class="form-modal__input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-modal__info-block">
+                                            <div class="form__title">
+                                                Источник данных
+                                            </div>
+                                            <div class="form-modal__select form-modal__select--catalog select">
+                                                <div class="form-modal__select-header">
+                                                    <input type="hidden" value="1">
+                                                    <span class="form-modal__select-current select__current">
+                                                        YML-файл
+                                                    </span>
+                                                    <svg width='12' height='12'>
+                                                        <use href='img/sprite/sprite.svg#arrow'></use>
+                                                    </svg>
+                                                </div>
+                                                <ul class="form-modal__select-body select__body">
+                                                    <li class="form-modal__select-item select__item" data-id="1"
+                                                        data-choice='choosen'>YML-файл
+                                                    </li>
+                                                    <li class="form-modal__select-item select__item" data-id="2"
+                                                        data-choice='choosen'>XML-файл
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-modal__autorefresh">
+                                        <div class="form-modal__info-block">
+                                            <label class="filter__checkbox-label">
+                                                <input class="filter__checkbox-input" type="checkbox"
+                                                    name="auto-refresh">
+                                                <span class="filter__checkbox-name">Включить</span>
+                                            </label>
+                                            <div class="autorefresh__input-block">
+                                                <input type="text" class="autorefresh__input" value="60">
+                                            </div>
+                                            <div class="autorefresh__info-block">
+                                                <div class="autorefresh__select autorefresh__select--time select">
+                                                    <div class="autorefresh__select-header">
+                                                        <input type="hidden" value="1">
+                                                        <span class="autorefresh__select-current select__current">
+                                                            мин
+                                                        </span>
+                                                        <svg width='8' height='8'>
+                                                            <use href='img/sprite/sprite.svg#arrow'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <ul class="autorefresh__select-body select__body">
+                                                        <li class="autorefresh__select-item select__item" data-id="1"
+                                                            data-choice='choosen'>
+                                                            сек
+                                                        </li>
+                                                        <li class="autorefresh__select-item select__item" data-id="2"
+                                                            data-choice='choosen'>
+                                                            мин
+                                                        </li>
+                                                        <li class="autorefresh__select-item select__item" data-id="3"
+                                                            data-choice='choosen'>час
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-modal__info-block">
+                                            <div class="autorefresh__input-block">
+                                                <div class="form-modal__input-name">Приоритет</div>
+                                                <input type="text" class="autorefresh__input">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-modal__link">
+                                        <h3 class="form-modal__subtitle">Ссылка на файл</h3>
+                                        <div class="form-modal__info-block">
+                                            <div class="form-modal__input-block">
+                                                <div class="form-modal__input-wrapper">
+                                                    <input type="text" class="form-modal__input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-modal__tags">
+                                        <h3 class="form-modal__subtitle">Соответствие тегов (YML)</h3>
+                                        <div class="form-modal__info-block">
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Название товара</span>
+                                                <input type="text" class="form-modal__input">
+                                            </div>
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Артикул</span>
+                                                <input type="text" class="form-modal__input">
+                                            </div>
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Цена</span>
+                                                <input type="text" class="form-modal__input">
+                                            </div>
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Наличие</span>
+                                                <input type="text" class="form-modal__input">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-modal__extra">
+                                        <h3 class="form-modal__subtitle">Дополнительные настройки</h3>
+                                        <div class="form-modal__info-wrapper">
+                                            <div class="form-modal__info-block">
+                                                <div class="form__title">
+                                                    Тип склада
+                                                </div>
+                                                <div class="form-modal__select form-modal__select--warehouse select">
+                                                    <div class="form-modal__select-header">
+                                                        <input type="hidden" value="1">
+                                                        <span class="form-modal__select-current select__current">
+                                                            партнерский
+                                                        </span>
+                                                        <svg width='12' height='12'>
+                                                            <use href='img/sprite/sprite.svg#arrow'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <ul class="form-modal__select-body select__body">
+                                                        <li class="form-modal__select-item select__item" data-id="1"
+                                                            data-choice='choosen'>партнерский
+                                                        </li>
+                                                        <li class="form-modal__select-item select__item" data-id="2"
+                                                            data-choice='choosen'>свой
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-modal__info-block">
+                                                <div class="form__title">
+                                                    Валюта
+                                                </div>
+                                                <div class="form-modal__select form-modal__select--warehouse select">
+                                                    <div class="form-modal__select-header">
+                                                        <input type="hidden" value="1">
+                                                        <span class="form-modal__select-current select__current">
+                                                            Доллар USD
+                                                        </span>
+                                                        <svg width='12' height='12'>
+                                                            <use href='img/sprite/sprite.svg#arrow'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <ul class="form-modal__select-body select__body">
+                                                        <li class="form-modal__select-item select__item" data-id="1"
+                                                            data-choice='choosen'>Доллар USD
+                                                        </li>
+                                                        <li class="form-modal__select-item select__item" data-id="2"
+                                                            data-choice='choosen'>Гривна UAH
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-modal__info-block">
+                                                <div class="form__title">
+                                                    Курс
+                                                </div>
+                                                <div class="form-modal__select form-modal__select--warehouse select">
+                                                    <div class="form-modal__select-header">
+                                                        <input type="hidden" value="1">
+                                                        <span class="form-modal__select-current select__current">
+                                                            свой
+                                                        </span>
+                                                        <svg width='12' height='12'>
+                                                            <use href='img/sprite/sprite.svg#arrow'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <ul class="form-modal__select-body select__body">
+                                                        <li class="form-modal__select-item select__item" data-id="1"
+                                                            data-choice='choosen'>свой
+                                                        </li>
+                                                        <li class="form-modal__select-item select__item" data-id="2"
+                                                            data-choice='choosen'>Партнерский
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-modal__info-block">
+                                                <div class="form__title">
+                                                    Источник курса
+                                                </div>
+                                                <div class="form-modal__select form-modal__select--warehouse select">
+                                                    <div class="form-modal__select-header">
+                                                        <input type="hidden" value="1">
+                                                        <span class="form-modal__select-current select__current">
+                                                            YML-файл
+                                                        </span>
+                                                        <svg width='12' height='12'>
+                                                            <use href='img/sprite/sprite.svg#arrow'></use>
+                                                        </svg>
+                                                    </div>
+                                                    <ul class="form-modal__select-body select__body">
+                                                        <li class="form-modal__select-item select__item" data-id="1"
+                                                            data-choice='choosen'>YML-файл
+                                                        </li>
+                                                        <li class="form-modal__select-item select__item" data-id="2"
+                                                            data-choice='choosen'>XML-файл
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-modal__info-block">
+                                                <div class="form-modal__input-block">
+                                                    <span class="form-modal__input-name">Ссылка</span>
+                                                    <input type="text" class="form-modal__input">
+                                                </div>
+                                            </div>
+                                            <div class="form-modal__info-block">
+                                                <div class="form-modal__input-block">
+                                                    <span class="form-modal__input-name">Тэг</span>
+                                                    <input type="text" class="form-modal__input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                                <div class="modal__bottom">
+                                    <button type="button" class="modal__btn modal__btn--download">Сохранить</button>
+                                    <button type="button" class="modal__btn modal-close">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="warehouse-compare">
+                            <div class="modal__wrapper edit">
+                                <div class="modal__close modal-close">
+                                    <svg width='24' height='24'>
+                                        <use href='img/sprite/sprite.svg#close'></use>
+                                    </svg>
+                                </div>
+
+                                <div class="modal__title">Сопоставление артикулов</div>
+
+                                <div class="content__table content__table-campare table">
+                                    <div class="table__wrapp">
+                                        <div class="table__product">
+                                            <ul class="table__product-list">
+                                                <li class="table__product-item" data-sticky="sticky">
+                                                    <button class="table__product-title table__btn">
+                                                        <span>Название</span>
+                                                        <svg width='14' height='14'>
+                                                            <use href='img/sprite/sprite.svg#sorting'></use>
+                                                        </svg>
+                                                    </button>
+                                                    <button class="table__product-partner-art table__btn">
+                                                        <span>Артикул партнера</span>
+                                                        <svg width='14' height='14'>
+                                                            <use href='img/sprite/sprite.svg#sorting'></use>
+                                                        </svg>
+                                                    </button>
+                                                    <button class="table__product-art table__btn">
+                                                        <span>Артикул</span>
+                                                        <svg width='14' height='14'>
+                                                            <use href='img/sprite/sprite.svg#sorting'></use>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                                <li class="table__product-item">
+                                                    <div class="table__product-title">
+                                                        <span>Мобильный телефон Samsung Galaxy S8 Plus Black на 188гб
+                                                        </span>
+                                                        <div class="table__product-titlefull">Мобильный телефон Samsung
+                                                            Galaxy S8 Plus Black на 188гб
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="table__product-partner-art">
+                                                        <span>198382939482190</span>
+                                                        <div class="table__product-titlefull">198382939482190</div>
+                                                    </div>
+                                                    <div class="table__product-art">
+                                                        <span>bci-0001</span>
+                                                        <div class="table__product-titlefull">bci-0001</div>
+                                                    </div>
+                                                </li>
+                                                <li class="table__product-item">
+                                                    <div class="table__product-title">
+                                                        <span>Мобильный телефон Samsung Galaxy S8 Plus Black на 188гб
+                                                        </span>
+                                                        <div class="table__product-titlefull">Мобильный телефон Samsung
+                                                            Galaxy S8 Plus Black на 188гб
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="table__product-partner-art">
+                                                        <span>198382939482190</span>
+                                                        <div class="table__product-titlefull">198382939482190</div>
+                                                    </div>
+                                                    <div class="table__product-art">
+                                                        <span>bci-0001</span>
+                                                        <div class="table__product-titlefull">bci-0001</div>
+                                                    </div>
+                                                </li>
+                                                <li class="table__product-item">
+                                                    <div class="table__product-title">
+                                                        <span>Мобильный телефон Samsung Galaxy S8 Plus Black на 188гб
+                                                        </span>
+                                                        <div class="table__product-titlefull">Мобильный телефон Samsung
+                                                            Galaxy S8 Plus Black на 188гб
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="table__product-partner-art">
+                                                        <span>198382939482190</span>
+                                                        <div class="table__product-titlefull">198382939482190</div>
+                                                    </div>
+                                                    <div class="table__product-art">
+                                                        <span>bci-0001</span>
+                                                        <div class="table__product-titlefull">bci-0001</div>
+                                                    </div>
+                                                </li>
+                                                <li class="table__product-item">
+                                                    <div class="table__product-title">
+                                                        <span>Мобильный телефон Samsung Galaxy S8 Plus Black на 188гб
+                                                        </span>
+                                                        <div class="table__product-titlefull">Мобильный телефон Samsung
+                                                            Galaxy S8 Plus Black на 188гб
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="table__product-partner-art">
+                                                        <span>198382939482190</span>
+                                                        <div class="table__product-titlefull">198382939482190</div>
+                                                    </div>
+                                                    <div class="table__product-art">
+                                                        <span>bci-0001</span>
+                                                        <div class="table__product-titlefull">bci-0001</div>
+                                                    </div>
+                                                </li>
+                                                <li class="table__product-item">
+                                                    <div class="table__product-title">
+                                                        <span>Мобильный телефон Samsung Galaxy S8 Plus Black на 188гб
+                                                        </span>
+                                                        <div class="table__product-titlefull">Мобильный телефон Samsung
+                                                            Galaxy S8 Plus Black на 188гб
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="table__product-partner-art">
+                                                        <span>198382939482190</span>
+                                                        <div class="table__product-titlefull">198382939482190</div>
+                                                    </div>
+                                                    <div class="table__product-art">
+                                                        <span>bci-0001</span>
+                                                        <div class="table__product-titlefull">bci-0001</div>
+                                                    </div>
+                                                </li>
+                                                <li class="table__product-item">
+                                                    <div class="table__product-title">
+                                                        <span>Мобильный телефон Samsung Galaxy S8 Plus Black на 188гб
+                                                        </span>
+                                                        <div class="table__product-titlefull">Мобильный телефон Samsung
+                                                            Galaxy S8 Plus Black на 188гб
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="table__product-partner-art">
+                                                        <span>198382939482190</span>
+                                                        <div class="table__product-titlefull">198382939482190</div>
+                                                    </div>
+                                                    <div class="table__product-art">
+                                                        <span>bci-0001</span>
+                                                        <div class="table__product-titlefull">bci-0001</div>
+                                                    </div>
+                                                </li>
+                                                <li class="table__product-item">
+                                                    <div class="table__product-title">
+                                                        <span>Мобильный телефон Samsung Galaxy S8 Plus Black на 188гб
+                                                        </span>
+                                                        <div class="table__product-titlefull">Мобильный телефон Samsung
+                                                            Galaxy S8 Plus Black на 188гб
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="table__product-partner-art">
+                                                        <span>198382939482190</span>
+                                                        <div class="table__product-titlefull">198382939482190</div>
+                                                    </div>
+                                                    <div class="table__product-art">
+                                                        <span>bci-0001</span>
+                                                        <div class="table__product-titlefull">bci-0001</div>
+                                                    </div>
+                                                </li>
+                                                <li class="table__product-item">
+                                                    <div class="table__product-title">
+                                                        <span>Мобильный телефон Samsung Galaxy S8 Plus Black на 188гб
+                                                        </span>
+                                                        <div class="table__product-titlefull">Мобильный телефон Samsung
+                                                            Galaxy S8 Plus Black на 188гб
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="table__product-partner-art">
+                                                        <span>198382939482190</span>
+                                                        <div class="table__product-titlefull">198382939482190</div>
+                                                    </div>
+                                                    <div class="table__product-art">
+                                                        <span>bci-0001</span>
+                                                        <div class="table__product-titlefull">bci-0001</div>
+                                                    </div>
+                                                </li>
+                                                <li class="table__product-item">
+                                                    <div class="table__product-title">
+                                                        <span>Мобильный телефон Samsung Galaxy S8 Plus Black на 188гб
+                                                        </span>
+                                                        <div class="table__product-titlefull">Мобильный телефон Samsung
+                                                            Galaxy S8 Plus Black на 188гб
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="table__product-partner-art">
+                                                        <span>198382939482190</span>
+                                                        <div class="table__product-titlefull">198382939482190</div>
+                                                    </div>
+                                                    <div class="table__product-art">
+                                                        <span>bci-0001</span>
+                                                        <div class="table__product-titlefull">bci-0001</div>
+                                                    </div>
+                                                </li>
+                                                <li class="table__product-item">
+                                                    <div class="table__product-title">
+                                                        <span>Мобильный телефон Samsung Galaxy S8 Plus Black на 188гб
+                                                        </span>
+                                                        <div class="table__product-titlefull">Мобильный телефон Samsung
+                                                            Galaxy S8 Plus Black на 188гб
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="table__product-partner-art">
+                                                        <span>198382939482190</span>
+                                                        <div class="table__product-titlefull">198382939482190</div>
+                                                    </div>
+                                                    <div class="table__product-art">
+                                                        <span>bci-0001</span>
+                                                        <div class="table__product-titlefull">bci-0001</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pagination">
+                                    <a class="pagination__nav pagination__nav--prev" href="#">
+                                        <svg width='11' height='15'>
+                                            <use href='img/sprite/sprite.svg#arrow'></use>
+                                        </svg>
+                                    </a>
+                                    <ul class="pagination__list">
+                                        <li class="pagination__list-item">
+                                            <a class="pagination__list-link pagination__list-link--active"
+                                                href="#">1</a>
+                                        </li>
+                                        <li class="pagination__list-item">
+                                            <a class="pagination__list-link" href="#">2</a>
+                                        </li>
+                                        <li class="pagination__list-item">
+                                            <a class="pagination__list-link" href="#">3</a>
+                                        </li>
+                                        <li class="pagination__list-item">
+                                            <span>…</span>
+                                        </li>
+                                        <li class="pagination__list-item">
+                                            <a class="pagination__list-link" href="#">18</a>
+                                        </li>
+                                        <li class="pagination__list-item">
+                                            <a class="pagination__list-link" href="#">19</a>
+                                        </li>
+                                    </ul>
+                                    <a class="pagination__nav pagination__nav--next" href="#">
+                                        <svg width='11' height='15'>
+                                            <use href='img/sprite/sprite.svg#arrow'></use>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="modal__bottom">
+                                    <button type="button" class="modal__btn modal__btn--download">Сохранить</button>
+                                    <button type="button" class="modal__btn modal-close">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+  <div class="footer">
+    <p class="copyright">© 2022. iBattery CRM. Все права защищены.</p>
+  </div>
+</footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

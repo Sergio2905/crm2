@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content="default">
+  <title>BatteryCRM</title>
+  <link href="img/logo.png" rel="icon"/>
+  <link rel="preload" href="fonts/FuturaNewRegular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/FuturaNewMedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/FuturaNewDemi.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/FuturaNewBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="settings-page">
+    <div class="wrapper">
+        <header>
+  <div class="header">
+    <div class="header__title">Настройки</div>
+    <a class="header__logo" href="$">
+      <svg width='8' height='16'>
+        <use href='img/sprite/sprite.svg#logo-battery'></use>
+      </svg>
+      <svg width='122' height='13'>
+        <use href='img/sprite/sprite.svg#logo-title'></use>
+      </svg>
+    </a>
+    <div class="header__btns">
+      <a href="./" class="header__btn">
+        <svg width='13.7' height='13.7'>
+          <use href='img/sprite/sprite.svg#setting'></use>
+        </svg>
+      </a>
+      <div class="header__user-btn">
+        <button class="header__btn">
+          <svg width='13.7' height='13.7'>
+            <use href='img/sprite/sprite.svg#user'></use>
+          </svg>
+        </button>
+        <div class="header__user-settings">
+          <div class="user">
+            <div class="user__personal">
+              <div class="user__avatar">
+                <picture>
+                  <source type='image/webp' srcset='img/agnes.webp'>
+                  <img width='40' height='40' src='img/agnes.png' alt='Агнес Толстопятко'>
+                </picture>
+              </div>
+              <div class="user__name">Агнес Толстопятко</div>
+            </div>
+            <ul class="user__btns">
+              <li class="user__btns-item">
+                <button class="user__btn">
+                  <svg width='14' height='14'>
+                    <use href='img/sprite/sprite.svg#account'></use>
+                  </svg>
+                  <span>Личный кабинет</span>
+                </button>
+              </li>
+              <li class="user__btns-item">
+                <button class="user__btn">
+                  <svg width='14' height='14'>
+                    <use href='img/sprite/sprite.svg#theme'></use>
+                  </svg>
+                  <span>Темная тема</span>
+                </button>
+              </li>
+              <li class="user__btns-item">
+                <button class="user__btn">
+                  <svg width='14' height='14'>
+                    <use href='img/sprite/sprite.svg#exit'></use>
+                  </svg>
+                  <span>Выйти</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+        <main class="main">
+
+            <section class="navigation">
+                <div class="navigation__wrapper">
+                    <ul class="navigation__controls">
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn">
+                                <svg width='19' height='19'>
+                                    <use href='img/sprite/sprite.svg#bag'></use>
+                                </svg>
+                                <span>Заказы</span>
+                            </div>
+                        </li>
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn">
+                                <svg width='19' height='19'>
+                                    <use href='img/sprite/sprite.svg#clients'></use>
+                                </svg>
+                                <span>Клиенты</span>
+                            </div>
+                        </li>
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn">
+                                <svg width='19' height='19'>
+                                    <use href='img/sprite/sprite.svg#shop'></use>
+                                </svg>
+                                <span>Товары</span>
+                            </div>
+                        </li>
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn">
+                                <svg width='19' height='19'>
+                                    <use href='img/sprite/sprite.svg#wallet'></use>
+                                </svg>
+                                <span>Финансы</span>
+                            </div>
+                        </li>
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn active">
+                                <svg width='19' height='19'>
+                                    <use href='img/sprite/sprite.svg#tag'></use>
+                                </svg>
+                                <span>Соответствия товаров</span>
+                            </div>
+                        </li>
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn navigation-analytics">
+                                <button type="button" class="navigation-analytics__btn">
+                                    <svg width='19' height='19'>
+                                        <use href='img/sprite/sprite.svg#activity'></use>
+                                    </svg>
+                                    <span>Аналитика</span>
+                                </button>
+                                <div class="navigation-analytics__menu">
+                                    <ul class="navigation-analytics__list">
+                                        <li class="navigation-analytics__item">
+                                            <a href="general.html" class="navigation-analytics__link">Общая</a>
+                                        </li>
+                                        <li class="navigation-analytics__item">
+                                            <a href="products.html" class="navigation-analytics__link">Товары</a>
+                                        </li>
+                                        <li class="navigation-analytics__item">
+                                            <a href="finance.html" class="navigation-analytics__link">Финансы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="content">
+                <h1 class="content__title-mobile">Товары</h1>
+
+                <div class="content__sidebar sidebar">
+                    <ul class="sidebar__list">
+                        <li class="sidebar__item active">
+                            <a href="settings.html" class="sidebar__link">
+                                <svg>
+                                    <use href='img/sprite/sprite.svg#shopping-cart'></use>
+                                </svg>
+                                <span>Товары</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="resources.html" class="sidebar__link">
+                                <svg>
+                                    <use href='img/sprite/sprite.svg#store'></use>
+                                </svg>
+                                <span>Ресурсы продаж</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="warehouses.html" class="sidebar__link">
+                                <svg>
+                                    <use href='img/sprite/sprite.svg#box'></use>
+                                </svg>
+                                <span>Склады</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="matrix.html" class="sidebar__link">
+                                <svg>
+                                    <use href='img/sprite/sprite.svg#calculator'></use>
+                                </svg>
+                                <span>Матрица прибыли</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button type="button" class="minimize-btn">
+                        <svg>
+                            <use xlink: href="img/sprite/sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="content__body">
+
+                    <div class="content__header header-content">
+                        <h2 class="header-content__title">Товары</h2>
+                        <div class="header-content__btns">
+                            <button class="header-content__btn btn-blue" data-path="catalog-refresh">Обновить
+                                каталог</button>
+                            <button class="header-content__btn btn-white" data-path="catalog-clear">Очистить каталог
+                                товаров</button>
+                        </div>
+                    </div>
+
+                    <h3 class="content__subtitle">Синхронизация товаров</h3>
+
+                    <div class="content__filter filter">
+                        <form class="filter__form form">
+                            <div class="filter__info filter__info-change">
+                                <div class="filter__info-block">
+                                    <div class="form__title">
+                                        Основной каталог данных
+                                    </div>
+                                    <div class="filter__select filter__select--catalog select">
+                                        <div class="filter__select-header">
+                                            <input type="hidden" value="1">
+                                            <span class="filter__select-current select__current">
+                                                Каталог 1
+                                            </span>
+                                            <svg width='12' height='12'>
+                                                <use href='img/sprite/sprite.svg#arrow'></use>
+                                            </svg>
+                                        </div>
+                                        <ul class="filter__select-body select__body">
+                                            <li class="filter__select-item select__item" data-id="1"
+                                                data-choice='choosen'>Каталог 1
+                                            </li>
+                                            <li class="filter__select-item select__item" data-id="2"
+                                                data-choice='choosen'>Каталог 2
+                                            </li>
+                                            <li class="filter__select-item select__item" data-id="3"
+                                                data-choice='choosen'>Каталог 3
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="filter__info-block">
+                                    <label class="filter__checkbox-label">
+                                        <input class="filter__checkbox-input" type="checkbox" name="auto-refresh">
+                                        <span class="filter__checkbox-name">Автообновление каталога</span>
+                                    </label>
+                                </div>
+                                <div class="filter__info-wrapper">
+                                    <div class="filter__info-block">
+                                        <div class="filter__input-block">
+                                            <span class="filter__input-name">Автообновление каждые</span>
+                                            <input type="text" class="filter__input" value="60">
+                                        </div>
+                                    </div>
+                                    <div class="filter__info-block">
+                                        <div class="filter__select filter__select--time select">
+                                            <div class="filter__select-header">
+                                                <input type="hidden" value="1">
+                                                <span class="filter__select-current select__current">
+                                                    Минут
+                                                </span>
+                                                <svg width='12' height='12'>
+                                                    <use href='img/sprite/sprite.svg#arrow'></use>
+                                                </svg>
+                                            </div>
+                                            <ul class="filter__select-body select__body">
+                                                <li class="filter__select-item select__item" data-id="1"
+                                                    data-choice='choosen'>
+                                                    Секунд
+                                                </li>
+                                                <li class="filter__select-item select__item" data-id="2"
+                                                    data-choice='choosen'>
+                                                    Минут
+                                                </li>
+                                                <li class="filter__select-item select__item" data-id="3"
+                                                    data-choice='choosen'>Часов
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__btns">
+                                <button type="button" class="form__btn btn-blue"
+                                    data-path="catalog-save">Сохранить</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <h3 class="content__subtitle">Список каталогов</h3>
+
+                    <div class="content__table table">
+                        <div class="table__wrapp">
+                            <div class="table__product">
+                                <ul class="table__product-list">
+                                    <li class="table__product-item" data-sticky="sticky">
+                                        <button class="table__product-amount table__btn">
+                                            <span>#</span>
+                                            <svg width='14' height='14'>
+                                                <use href='img/sprite/sprite.svg#sorting'></use>
+                                            </svg>
+                                        </button>
+                                        <button class="table__product-title table__btn">
+                                            <span>Название</span>
+                                            <svg width='14' height='14'>
+                                                <use href='img/sprite/sprite.svg#sorting'></use>
+                                            </svg>
+                                        </button>
+                                        <button class="table__product-count table__btn">
+                                            <span>Количество товаров</span>
+                                            <svg width='14' height='14'>
+                                                <use href='img/sprite/sprite.svg#sorting'></use>
+                                            </svg>
+                                        </button>
+                                        <button class="table__product-source table__btn">
+                                            <span>Источник</span>
+                                            <svg width='14' height='14'>
+                                                <use href='img/sprite/sprite.svg#sorting'></use>
+                                            </svg>
+                                        </button>
+                                        <button class="table__product-main table__btn">
+                                            <span>Основной</span>
+                                        </button>
+                                        <button class="table__product-actions table__btn">
+                                            <span>Действие</span>
+                                        </button>
+                                    </li>
+                                    <li class="table__product-item">
+                                        <div class="table__product-amount">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="table__product-title">
+                                            <span>USB Cable Yoho grey 1564 micro max</span>
+                                            <div class="table__product-titlefull">USB Cable Yoho grey 1564 micro max
+                                            </div>
+                                        </div>
+                                        <div class="table__product-count">
+                                            <span>174 458</span>
+                                            <div class="table__product-titlefull">174 458</div>
+                                        </div>
+                                        <div class="table__product-source">
+                                            <span>Кабели</span>
+                                            <div class="table__product-titlefull">Кабели</div>
+                                        </div>
+                                        <div class="table__product-main">
+                                            <svg>
+                                                <use xlink: href="img/sprite/sprite.svg#star"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="table__product-actions">
+                                            <div class="table__actions">
+                                                <button class="table__actions-btn" data-path="catalog-edit">
+                                                    <svg>
+                                                        <use xlink: href="img/sprite/sprite.svg#edit"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="table__actions-btn" data-path="catalog-delete">
+                                                    <svg>
+                                                        <use xlink: href="img/sprite/sprite.svg#delete"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="table__product-item">
+                                        <div class="table__product-amount">
+                                            <span>2</span>
+                                        </div>
+                                        <div class="table__product-title">
+                                            <span>USB Cable Yoho grey 1564 micro max</span>
+                                            <div class="table__product-titlefull">USB Cable Yoho grey 1564 micro max
+                                            </div>
+                                        </div>
+                                        <div class="table__product-count">
+                                            <span>639 884 452</span>
+                                            <div class="table__product-titlefull">174 458</div>
+                                        </div>
+                                        <div class="table__product-source">
+                                            <span>Кабели</span>
+                                            <div class="table__product-titlefull">Кабели</div>
+                                        </div>
+                                        <div class="table__product-main">
+
+                                        </div>
+                                        <div class="table__product-actions">
+                                            <div class="table__actions">
+                                                <button class="table__actions-btn" data-path="catalog-edit">
+                                                    <svg>
+                                                        <use xlink: href="img/sprite/sprite.svg#edit"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="table__actions-btn" data-path="catalog-delete">
+                                                    <svg>
+                                                        <use xlink: href="img/sprite/sprite.svg#delete"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="table__product-item">
+                                        <div class="table__product-amount">
+                                            <span>3</span>
+                                        </div>
+                                        <div class="table__product-title">
+                                            <span>USB Cable Yoho grey 1564 micro max</span>
+                                            <div class="table__product-titlefull">USB Cable Yoho grey 1564 micro max
+                                            </div>
+                                        </div>
+                                        <div class="table__product-count">
+                                            <span>0</span>
+                                            <div class="table__product-titlefull">174 458</div>
+                                        </div>
+                                        <div class="table__product-source">
+                                            <span>Кабели</span>
+                                            <div class="table__product-titlefull">Кабели</div>
+                                        </div>
+                                        <div class="table__product-main">
+
+                                        </div>
+                                        <div class="table__product-actions">
+                                            <div class="table__actions">
+                                                <button class="table__actions-btn" data-path="catalog-edit">
+                                                    <svg>
+                                                        <use xlink: href="img/sprite/sprite.svg#edit"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="table__actions-btn" data-path="catalog-delete">
+                                                    <svg>
+                                                        <use xlink: href="img/sprite/sprite.svg#delete"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="content__btn content__btn-add btn-blue" data-path="catalog-edit">
+                        <svg>
+                            <use xlink: href="img/sprite/sprite.svg#plus"></use>
+                        </svg>
+                        <span>Добавить каталог</span>
+                    </button>
+
+                    <div class="modal">
+                        <div class="modal__container" data-target="catalog-refresh">
+                            <div class="modal__wrapper download">
+                                <div class="modal__title">Обновить каталог</div>
+
+                                <div class="modal__message">
+                                    Подтвердите загрузку данных для текущего каталога товаров. При подтверждении,
+                                    загрузка начнется в фоне и Вы
+                                    получите уведомление об окончании.
+                                </div>
+
+                                <div class="modal__bottom">
+                                    <button type="button" class="modal__btn modal__btn--download">Подтвердить</button>
+                                    <button type="button" class="modal__btn modal-close">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="catalog-clear">
+                            <div class="modal__wrapper download">
+                                <div class="modal__title">Очистить каталог</div>
+
+                                <div class="modal__message">
+                                    Подтвердите очистку всех данных для текущего каталога товаров. При подтверждении,
+                                    работа системи соответствия
+                                    товаров будет остановлена.
+                                </div>
+
+                                <div class="modal__bottom">
+                                    <button type="button" class="modal__btn modal__btn--download">Подтвердить</button>
+                                    <button type="button" class="modal__btn modal-close">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="catalog-save">
+                            <div class="modal__wrapper download">
+                                <div class="modal__title">Сохранить каталог</div>
+
+                                <div class="modal__message">
+                                    Подтвердите очистку всех данных для текущего каталога товаров. При подтверждении,
+                                    работа системи соответствия
+                                    товаров будет остановлена.
+                                </div>
+
+                                <div class="modal__bottom">
+                                    <button type="button" class="modal__btn modal__btn--download">Подтвердить</button>
+                                    <button type="button" class="modal__btn modal-close">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="catalog-delete">
+                            <div class="modal__wrapper download">
+                                <div class="modal__title">Удалить каталог</div>
+
+                                <div class="modal__message">
+                                    Подтвердите удаление всех данных для текущего каталога товаров. При подтверждении,
+                                    вся информация о данном
+                                    складе будет безвозвратно удалена.
+                                </div>
+
+                                <div class="modal__bottom">
+                                    <button type="button" class="modal__btn modal__btn--download">Подтвердить</button>
+                                    <button type="button" class="modal__btn modal-close">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="catalog-edit">
+                            <div class="modal__wrapper edit">
+                                <div class="modal__close modal-close">
+                                    <svg width='24' height='24'>
+                                        <use href='img/sprite/sprite.svg#close'></use>
+                                    </svg>
+                                </div>
+
+                                <div class="modal__title">Добавить новый каталог</div>
+
+                                <form class="modal__form form-modal">
+
+                                    <div class="form-modal__catalog">
+                                        <div class="form-modal__info-block">
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Название каталога</span>
+                                                <div class="form-modal__input-wrapper">
+                                                    <input type="text" class="form-modal__input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-modal__info-block">
+                                            <div class="form__title">
+                                                Источник данных
+                                            </div>
+                                            <div class="form-modal__select form-modal__select--catalog select">
+                                                <div class="form-modal__select-header">
+                                                    <input type="hidden" value="1">
+                                                    <span class="form-modal__select-current select__current">
+                                                        YML-файл
+                                                    </span>
+                                                    <svg width='12' height='12'>
+                                                        <use href='img/sprite/sprite.svg#arrow'></use>
+                                                    </svg>
+                                                </div>
+                                                <ul class="form-modal__select-body select__body">
+                                                    <li class="form-modal__select-item select__item" data-id="1"
+                                                        data-choice='choosen'>YML-файл
+                                                    </li>
+                                                    <li class="form-modal__select-item select__item" data-id="2"
+                                                        data-choice='choosen'>XML-файл
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-modal__link">
+                                        <h3 class="form-modal__subtitle">Ссылка на файл</h3>
+                                        <div class="form-modal__info-block">
+                                            <div class="form-modal__input-block">
+                                                <div class="form-modal__input-wrapper">
+                                                    <input type="text" class="form-modal__input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-modal__tags">
+                                        <h3 class="form-modal__subtitle">Соответствие тегов (YML)</h3>
+                                        <div class="form-modal__info-block">
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Название</span>
+                                                <input type="text" class="form-modal__input">
+                                            </div>
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Артикул</span>
+                                                <input type="text" class="form-modal__input">
+                                            </div>
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Ссылка на товар</span>
+                                                <input type="text" class="form-modal__input">
+                                            </div>
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Ссылка на фото</span>
+                                                <input type="text" class="form-modal__input">
+                                            </div>
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Цена</span>
+                                                <input type="text" class="form-modal__input">
+                                            </div>
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Количество</span>
+                                                <input type="text" class="form-modal__input">
+                                            </div>
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Категория</span>
+                                                <input type="text" class="form-modal__input">
+                                            </div>
+                                            <div class="form-modal__input-block">
+                                                <span class="form-modal__input-name">Продукт</span>
+                                                <input type="text" class="form-modal__input">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                                <div class="modal__bottom">
+                                    <button type="button" class="modal__btn modal__btn--download">Сохранить</button>
+                                    <button type="button" class="modal__btn modal-close">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+  <div class="footer">
+    <p class="copyright">© 2022. iBattery CRM. Все права защищены.</p>
+  </div>
+</footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

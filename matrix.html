@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content="default">
+  <title>BatteryCRM</title>
+  <link href="img/logo.png" rel="icon"/>
+  <link rel="preload" href="fonts/FuturaNewRegular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/FuturaNewMedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/FuturaNewDemi.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/FuturaNewBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="settings-page">
+    <div class="wrapper">
+        <header>
+  <div class="header">
+    <div class="header__title">Настройки</div>
+    <a class="header__logo" href="$">
+      <svg width='8' height='16'>
+        <use href='img/sprite/sprite.svg#logo-battery'></use>
+      </svg>
+      <svg width='122' height='13'>
+        <use href='img/sprite/sprite.svg#logo-title'></use>
+      </svg>
+    </a>
+    <div class="header__btns">
+      <a href="./" class="header__btn">
+        <svg width='13.7' height='13.7'>
+          <use href='img/sprite/sprite.svg#setting'></use>
+        </svg>
+      </a>
+      <div class="header__user-btn">
+        <button class="header__btn">
+          <svg width='13.7' height='13.7'>
+            <use href='img/sprite/sprite.svg#user'></use>
+          </svg>
+        </button>
+        <div class="header__user-settings">
+          <div class="user">
+            <div class="user__personal">
+              <div class="user__avatar">
+                <picture>
+                  <source type='image/webp' srcset='img/agnes.webp'>
+                  <img width='40' height='40' src='img/agnes.png' alt='Агнес Толстопятко'>
+                </picture>
+              </div>
+              <div class="user__name">Агнес Толстопятко</div>
+            </div>
+            <ul class="user__btns">
+              <li class="user__btns-item">
+                <button class="user__btn">
+                  <svg width='14' height='14'>
+                    <use href='img/sprite/sprite.svg#account'></use>
+                  </svg>
+                  <span>Личный кабинет</span>
+                </button>
+              </li>
+              <li class="user__btns-item">
+                <button class="user__btn">
+                  <svg width='14' height='14'>
+                    <use href='img/sprite/sprite.svg#theme'></use>
+                  </svg>
+                  <span>Темная тема</span>
+                </button>
+              </li>
+              <li class="user__btns-item">
+                <button class="user__btn">
+                  <svg width='14' height='14'>
+                    <use href='img/sprite/sprite.svg#exit'></use>
+                  </svg>
+                  <span>Выйти</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+        <main class="main">
+
+            <section class="navigation">
+                <div class="navigation__wrapper">
+                    <ul class="navigation__controls">
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn">
+                                <svg width='19' height='19'>
+                                    <use href='img/sprite/sprite.svg#bag'></use>
+                                </svg>
+                                <span>Заказы</span>
+                            </div>
+                        </li>
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn">
+                                <svg width='19' height='19'>
+                                    <use href='img/sprite/sprite.svg#clients'></use>
+                                </svg>
+                                <span>Клиенты</span>
+                            </div>
+                        </li>
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn">
+                                <svg width='19' height='19'>
+                                    <use href='img/sprite/sprite.svg#shop'></use>
+                                </svg>
+                                <span>Товары</span>
+                            </div>
+                        </li>
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn">
+                                <svg width='19' height='19'>
+                                    <use href='img/sprite/sprite.svg#wallet'></use>
+                                </svg>
+                                <span>Финансы</span>
+                            </div>
+                        </li>
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn active">
+                                <svg width='19' height='19'>
+                                    <use href='img/sprite/sprite.svg#tag'></use>
+                                </svg>
+                                <span>Соответствия товаров</span>
+                            </div>
+                        </li>
+                        <li class="navigation__controls-item">
+                            <div class="navigation__controls-btn navigation-analytics">
+                                <button type="button" class="navigation-analytics__btn">
+                                    <svg width='19' height='19'>
+                                        <use href='img/sprite/sprite.svg#activity'></use>
+                                    </svg>
+                                    <span>Аналитика</span>
+                                </button>
+                                <div class="navigation-analytics__menu">
+                                    <ul class="navigation-analytics__list">
+                                        <li class="navigation-analytics__item">
+                                            <a href="general.html" class="navigation-analytics__link">Общая</a>
+                                        </li>
+                                        <li class="navigation-analytics__item">
+                                            <a href="products.html" class="navigation-analytics__link">Товары</a>
+                                        </li>
+                                        <li class="navigation-analytics__item">
+                                            <a href="finance.html" class="navigation-analytics__link">Финансы</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="content">
+                <h1 class="content__title-mobile">Матрица прибыли</h1>
+
+                <div class="content__sidebar sidebar">
+                    <ul class="sidebar__list">
+                        <li class="sidebar__item">
+                            <a href="settings.html" class="sidebar__link">
+                                <svg>
+                                    <use href='img/sprite/sprite.svg#shopping-cart'></use>
+                                </svg>
+                                <span>Товары</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="resources.html" class="sidebar__link">
+                                <svg>
+                                    <use href='img/sprite/sprite.svg#store'></use>
+                                </svg>
+                                <span>Ресурсы продаж</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="warehouses.html" class="sidebar__link">
+                                <svg>
+                                    <use href='img/sprite/sprite.svg#box'></use>
+                                </svg>
+                                <span>Склады</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item active">
+                            <a href="matrix.html" class="sidebar__link">
+                                <svg>
+                                    <use href='img/sprite/sprite.svg#calculator'></use>
+                                </svg>
+                                <span>Матрица прибыли</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button type="button" class="minimize-btn">
+                        <svg>
+                            <use xlink: href="img/sprite/sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="content__body">
+
+                    <div class="content__header header-content">
+                        <h2 class="header-content__title">Матрица прибыли</h2>
+
+                        <div class="header-content__btns">
+                            <button class="header-content__btn btn-blue" data-path="matrix-refresh">
+                                <span>Обновить каталог</span>
+                            </button>
+                            <button class="header-content__btn btn-white" data-path="warehouse-show-all">
+                                Раскрыть все пункты
+                            </button>
+                        </div>
+                    </div>
+
+                    <h3 class="content__subtitle">Список родительский категорий</h3>
+
+                    <div class="content__table content__table-matrix table">
+                        <div class="table__wrapp">
+
+                            <div class="table__product">
+                                <ul class="table__product-list">
+                                    <li class="table__product-item" data-sticky="sticky">
+                                        <button class="table__product-amount table__btn">
+                                            <span>#</span>
+                                            <svg width="14" height="14">
+                                                <use href="img/sprite/sprite.svg#sorting"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="table__product-id table__btn">
+                                            <span>ID категории</span>
+                                            <svg width="14" height="14">
+                                                <use href="img/sprite/sprite.svg#sorting"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="table__product-count table__btn">
+                                            <span>Кол-во подкатегорий (½)</span>
+                                            <svg width="14" height="14">
+                                                <use href="img/sprite/sprite.svg#sorting"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="table__product-name table__btn">
+                                            <span>Название категории</span>
+                                            <svg width="14" height="14">
+                                                <use href="img/sprite/sprite.svg#sorting"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="table__product-actions table__btn">
+                                            <span>Действия</span>
+                                        </button>
+                                    </li>
+
+                                    <li class="table__product-item">
+                                        <div class="table__product-amount">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="table__product-id">
+                                            <span>221</span>
+                                        </div>
+                                        <div class="table__product-count">
+                                            <span>1 / 2</span>
+                                        </div>
+                                        <div class="table__product-name">
+                                            <span>Средства коммуникации</span>
+                                        </div>
+                                        <div class="table__product-actions">
+                                            <button class="table__product-action uncover">
+                                                <span>раскрыть</span>
+                                                <svg width="10" height="10">
+                                                    <use href="img/sprite/sprite.svg#arrow-down"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="table__product-action cover">
+                                                <span>скрыть</span>
+                                                <svg width="10" height="10">
+                                                    <use href="img/sprite/sprite.svg#arrow-up"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <ul class="table__product-sublist hidden">
+                                        <li class="table__product-item">
+                                            <div class="table__product-amount">
+                                                <span></span>
+                                            </div>
+                                            <div class="table__product-id">
+                                                <span>413</span>
+                                            </div>
+                                            <div class="table__product-count">
+                                                <span>-</span>
+                                            </div>
+                                            <div class="table__product-name">
+                                                <span>Планшетные компьютеры</span>
+                                            </div>
+                                            <div class="table__product-actions">
+                                                <button class="table__product-action uncover-second">
+                                                    <span>раскрыть</span>
+                                                    <svg width="10" height="10">
+                                                        <use href="img/sprite/sprite.svg#arrow-down"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="table__product-action cover-second">
+                                                    <span>скрыть</span>
+                                                    <svg width="10" height="10">
+                                                        <use href="img/sprite/sprite.svg#arrow-up"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <ul class="table__product-sublist hidden">
+                                            <li class="table__product-item">
+                                                <div class="table__product-amount">
+                                                    <span></span>
+                                                </div>
+                                                <div class="table__product-id">
+                                                    <span>552</span>
+                                                </div>
+                                                <div class="table__product-count">
+                                                    <span>-</span>
+                                                </div>
+                                                <div class="table__product-name">
+                                                    <span>GPS-навигаторы и трансляторы</span>
+                                                </div>
+                                                <div class="table__product-actions">
+                                                </div>
+                                            </li>
+                                            <li class="table__product-item">
+                                                <div class="table__product-amount">
+                                                    <span></span>
+                                                </div>
+                                                <div class="table__product-id">
+                                                    <span>552</span>
+                                                </div>
+                                                <div class="table__product-count">
+                                                    <span>-</span>
+                                                </div>
+                                                <div class="table__product-name">
+                                                    <span>GPS-навигаторы и трансляторы</span>
+                                                </div>
+                                                <div class="table__product-actions">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </ul>
+
+                                    <li class="table__product-item">
+                                        <div class="table__product-amount">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="table__product-id">
+                                            <span>221</span>
+                                        </div>
+                                        <div class="table__product-count">
+                                            <span>1 / 2</span>
+                                        </div>
+                                        <div class="table__product-name">
+                                            <span>Средства коммуникации</span>
+                                        </div>
+                                        <div class="table__product-actions">
+                                        </div>
+                                    </li>
+
+                                    <li class="table__product-item">
+                                        <div class="table__product-amount">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="table__product-id">
+                                            <span>221</span>
+                                        </div>
+                                        <div class="table__product-count">
+                                            <span>1 / 2</span>
+                                        </div>
+                                        <div class="table__product-name">
+                                            <span>Средства коммуникации</span>
+                                        </div>
+                                        <div class="table__product-actions">
+                                            <button class="table__product-action uncover">
+                                                <span>раскрыть</span>
+                                                <svg width="10" height="10">
+                                                    <use href="img/sprite/sprite.svg#arrow-down"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="table__product-action cover">
+                                                <span>скрыть</span>
+                                                <svg width="10" height="10">
+                                                    <use href="img/sprite/sprite.svg#arrow-up"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <ul class="table__product-sublist hidden">
+                                        <li class="table__product-item">
+                                            <div class="table__product-amount">
+                                                <span></span>
+                                            </div>
+                                            <div class="table__product-id">
+                                                <span>413</span>
+                                            </div>
+                                            <div class="table__product-count">
+                                                <span>-</span>
+                                            </div>
+                                            <div class="table__product-name">
+                                                <span>Планшетные компьютеры</span>
+                                            </div>
+                                            <div class="table__product-actions">
+                                                <button class="table__product-action uncover-second">
+                                                    <span>раскрыть</span>
+                                                    <svg width="10" height="10">
+                                                        <use href="img/sprite/sprite.svg#arrow-down"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="table__product-action cover-second">
+                                                    <span>скрыть</span>
+                                                    <svg width="10" height="10">
+                                                        <use href="img/sprite/sprite.svg#arrow-up"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <ul class="table__product-sublist hidden">
+                                            <li class="table__product-item">
+                                                <div class="table__product-amount">
+                                                    <span></span>
+                                                </div>
+                                                <div class="table__product-id">
+                                                    <span>552</span>
+                                                </div>
+                                                <div class="table__product-count">
+                                                    <span>-</span>
+                                                </div>
+                                                <div class="table__product-name">
+                                                    <span>GPS-навигаторы и трансляторы</span>
+                                                </div>
+                                                <div class="table__product-actions">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </ul>
+
+                                    <li class="table__product-item">
+                                        <div class="table__product-amount">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="table__product-id">
+                                            <span>221</span>
+                                        </div>
+                                        <div class="table__product-count">
+                                            <span>1 / 2</span>
+                                        </div>
+                                        <div class="table__product-name">
+                                            <span>Средства коммуникации</span>
+                                        </div>
+                                        <div class="table__product-actions">
+                                        </div>
+                                    </li>
+
+                                    <li class="table__product-item">
+                                        <div class="table__product-amount">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="table__product-id">
+                                            <span>221</span>
+                                        </div>
+                                        <div class="table__product-count">
+                                            <span>1 / 2</span>
+                                        </div>
+                                        <div class="table__product-name">
+                                            <span>Средства коммуникации</span>
+                                        </div>
+                                        <div class="table__product-actions">
+                                        </div>
+                                    </li>
+
+                                    <li class="table__product-item">
+                                        <div class="table__product-amount">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="table__product-id">
+                                            <span>221</span>
+                                        </div>
+                                        <div class="table__product-count">
+                                            <span>1 / 2</span>
+                                        </div>
+                                        <div class="table__product-name">
+                                            <span>Средства коммуникации</span>
+                                        </div>
+                                        <div class="table__product-actions">
+                                            <button class="table__product-action uncover">
+                                                <span>раскрыть</span>
+                                                <svg width="10" height="10">
+                                                    <use href="img/sprite/sprite.svg#arrow-down"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="table__product-action cover">
+                                                <span>скрыть</span>
+                                                <svg width="10" height="10">
+                                                    <use href="img/sprite/sprite.svg#arrow-up"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <ul class="table__product-sublist hidden">
+                                        <li class="table__product-item">
+                                            <div class="table__product-amount">
+                                                <span></span>
+                                            </div>
+                                            <div class="table__product-id">
+                                                <span>413</span>
+                                            </div>
+                                            <div class="table__product-count">
+                                                <span>-</span>
+                                            </div>
+                                            <div class="table__product-name">
+                                                <span>Планшетные компьютеры</span>
+                                            </div>
+                                            <div class="table__product-actions">
+                                                <button class="table__product-action uncover-second">
+                                                    <span>раскрыть</span>
+                                                    <svg width="10" height="10">
+                                                        <use href="img/sprite/sprite.svg#arrow-down"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="table__product-action cover-second">
+                                                    <span>скрыть</span>
+                                                    <svg width="10" height="10">
+                                                        <use href="img/sprite/sprite.svg#arrow-up"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <ul class="table__product-sublist hidden">
+                                            <li class="table__product-item">
+                                                <div class="table__product-amount">
+                                                    <span></span>
+                                                </div>
+                                                <div class="table__product-id">
+                                                    <span>552</span>
+                                                </div>
+                                                <div class="table__product-count">
+                                                    <span>-</span>
+                                                </div>
+                                                <div class="table__product-name">
+                                                    <span>GPS-навигаторы и трансляторы</span>
+                                                </div>
+                                                <div class="table__product-actions">
+                                                </div>
+                                            </li>
+                                            <li class="table__product-item">
+                                                <div class="table__product-amount">
+                                                    <span></span>
+                                                </div>
+                                                <div class="table__product-id">
+                                                    <span>552</span>
+                                                </div>
+                                                <div class="table__product-count">
+                                                    <span>-</span>
+                                                </div>
+                                                <div class="table__product-name">
+                                                    <span>GPS-навигаторы и трансляторы</span>
+                                                </div>
+                                                <div class="table__product-actions">
+                                                </div>
+                                            </li>
+                                            <li class="table__product-item">
+                                                <div class="table__product-amount">
+                                                    <span></span>
+                                                </div>
+                                                <div class="table__product-id">
+                                                    <span>552</span>
+                                                </div>
+                                                <div class="table__product-count">
+                                                    <span>-</span>
+                                                </div>
+                                                <div class="table__product-name">
+                                                    <span>GPS-навигаторы и трансляторы</span>
+                                                </div>
+                                                <div class="table__product-actions">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </ul>
+
+                                </ul>
+                            </div>
+                            <div class="table__warehouse">
+                                <ul class="table__warehouse-list">
+                                    <li class="table__warehouse-item green" data-sticky="sticky">
+                                        <button class="table__warehouse-btn table__btn">
+                                            <span>iBattery</span>
+                                            <svg width='14' height='14'>
+                                                <use href='img/sprite/sprite.svg#sorting'></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+
+                                    <li class="table__warehouse-item pink">
+                                        <div class="table__warehouse-unavailable">
+                                            <span>недоступно</span>
+                                        </div>
+                                    </li>
+                                    <ul class="table__warehouse-sublist hidden">
+                                        <li class="table__warehouse-item pink">
+                                            <div class="table__warehouse-unavailable">
+                                                <span>недоступно</span>
+                                            </div>
+                                        </li>
+                                        <ul class="table__warehouse-sublist-second hidden">
+                                            <li class="table__warehouse-item pink">
+                                                <div class="table__warehouse-unavailable">
+                                                    <span>недоступно</span>
+                                                </div>
+                                            </li>
+                                            <li class="table__warehouse-item pink">
+                                                <div class="table__warehouse-unavailable">
+                                                    <span>недоступно</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </ul>
+
+                                    <li class="table__warehouse-item pink">
+                                        <div class="table__warehouse-unavailable">
+                                            <span>недоступно</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="table__warehouse-item pink">
+                                        <div class="table__warehouse-unavailable">
+                                            <span>недоступно</span>
+                                        </div>
+                                    </li>
+                                    <ul class="table__warehouse-sublist hidden">
+                                        <li class="table__warehouse-item pink">
+                                            <div class="table__warehouse-unavailable">
+                                                <span>недоступно</span>
+                                            </div>
+                                        </li>
+                                        <ul class="table__warehouse-sublist-second hidden">
+                                            <li class="table__warehouse-item pink">
+                                                <div class="table__warehouse-unavailable">
+                                                    <span>недоступно</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </ul>
+
+                                    <li class="table__warehouse-item pink">
+                                        <div class="table__warehouse-unavailable">
+                                            <span>недоступно</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="table__warehouse-item pink">
+                                        <div class="table__warehouse-unavailable">
+                                            <span>недоступно</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="table__warehouse-item pink">
+                                        <div class="table__warehouse-unavailable">
+                                            <span>недоступно</span>
+                                        </div>
+                                    </li>
+                                    <ul class="table__warehouse-sublist hidden">
+                                        <li class="table__warehouse-item pink">
+                                            <div class="table__warehouse-unavailable">
+                                                <span>недоступно</span>
+                                            </div>
+                                        </li>
+                                        <ul class="table__warehouse-sublist-second hidden">
+                                            <li class="table__warehouse-item pink">
+                                                <div class="table__warehouse-unavailable">
+                                                    <span>недоступно</span>
+                                                </div>
+                                            </li>
+                                            <li class="table__warehouse-item pink">
+                                                <div class="table__warehouse-unavailable">
+                                                    <span>недоступно</span>
+                                                </div>
+                                            </li>
+                                            <li class="table__warehouse-item pink">
+                                                <div class="table__warehouse-unavailable">
+                                                    <span>недоступно</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </ul>
+
+                                    <li class="table__warehouse-item table__warehouse-item-last">
+                                        <button class="table__warehouse-btn table__btn" style="display: none;">
+                                            <label class="filter__checkbox-label">
+                                                <input class="filter__checkbox-input" type="checkbox">
+                                                <span class="filter__checkbox-name check-all"></span>
+                                            </label>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="table__warehouse">
+                                <ul class="table__warehouse-list">
+                                    <li class="table__warehouse-item green" data-sticky="sticky">
+                                        <button class="table__warehouse-btn table__btn">
+                                            <span>Rozetka — Cedrus</span>
+                                            <svg width='14' height='14'>
+                                                <use href='img/sprite/sprite.svg#sorting'></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+
+                                    <li class="table__warehouse-item white">
+                                        <div class="table__warehouse-value">
+                                            <span>500</span>
+                                        </div>
+                                        <div class="table__warehouse-value">
+                                            <label class="filter__checkbox-label">
+                                                <input class="filter__checkbox-input" type="checkbox">
+                                                <span class="filter__checkbox-name"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <ul class="table__warehouse-sublist hidden">
+                                        <li class="table__warehouse-item white">
+                                            <div class="table__warehouse-value">
+                                                <span>500</span>
+                                            </div>
+                                            <div class="table__warehouse-value">
+                                                <label class="filter__checkbox-label">
+                                                    <input class="filter__checkbox-input" type="checkbox">
+                                                    <span class="filter__checkbox-name"></span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <ul class="table__warehouse-sublist-second hidden">
+                                            <li class="table__warehouse-item white">
+                                                <div class="table__warehouse-value">
+                                                    <span>500</span>
+                                                </div>
+                                                <div class="table__warehouse-value">
+                                                    <label class="filter__checkbox-label">
+                                                        <input class="filter__checkbox-input" type="checkbox">
+                                                        <span class="filter__checkbox-name"></span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="table__warehouse-item white">
+                                                <div class="table__warehouse-value">
+                                                    <span>500</span>
+                                                </div>
+                                                <div class="table__warehouse-value">
+                                                    <label class="filter__checkbox-label">
+                                                        <input class="filter__checkbox-input" type="checkbox">
+                                                        <span class="filter__checkbox-name"></span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </ul>
+
+                                    <li class="table__warehouse-item white">
+                                        <div class="table__warehouse-value">
+                                            <span>500</span>
+                                        </div>
+                                        <div class="table__warehouse-value">
+                                            <label class="filter__checkbox-label">
+                                                <input class="filter__checkbox-input" type="checkbox">
+                                                <span class="filter__checkbox-name"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li class="table__warehouse-item white">
+                                        <div class="table__warehouse-value">
+                                            <span>500</span>
+                                        </div>
+                                        <div class="table__warehouse-value">
+                                            <label class="filter__checkbox-label">
+                                                <input class="filter__checkbox-input" type="checkbox">
+                                                <span class="filter__checkbox-name"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <ul class="table__warehouse-sublist hidden">
+                                        <li class="table__warehouse-item white">
+                                            <div class="table__warehouse-value">
+                                                <span>500</span>
+                                            </div>
+                                            <div class="table__warehouse-value">
+                                                <label class="filter__checkbox-label">
+                                                    <input class="filter__checkbox-input" type="checkbox">
+                                                    <span class="filter__checkbox-name"></span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <ul class="table__warehouse-sublist-second hidden">
+                                            <li class="table__warehouse-item white">
+                                                <div class="table__warehouse-value">
+                                                    <span>500</span>
+                                                </div>
+                                                <div class="table__warehouse-value">
+                                                    <label class="filter__checkbox-label">
+                                                        <input class="filter__checkbox-input" type="checkbox">
+                                                        <span class="filter__checkbox-name"></span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </ul>
+
+                                    <li class="table__warehouse-item white">
+                                        <div class="table__warehouse-value">
+                                            <span>500</span>
+                                        </div>
+                                        <div class="table__warehouse-value">
+                                            <label class="filter__checkbox-label">
+                                                <input class="filter__checkbox-input" type="checkbox">
+                                                <span class="filter__checkbox-name"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li class="table__warehouse-item white">
+                                        <div class="table__warehouse-value">
+                                            <span>500</span>
+                                        </div>
+                                        <div class="table__warehouse-value">
+                                            <label class="filter__checkbox-label">
+                                                <input class="filter__checkbox-input" type="checkbox">
+                                                <span class="filter__checkbox-name"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li class="table__warehouse-item white">
+                                        <div class="table__warehouse-value">
+                                            <span>500</span>
+                                        </div>
+                                        <div class="table__warehouse-value">
+                                            <label class="filter__checkbox-label">
+                                                <input class="filter__checkbox-input" type="checkbox">
+                                                <span class="filter__checkbox-name"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <ul class="table__warehouse-sublist hidden">
+                                        <li class="table__warehouse-item white">
+                                            <div class="table__warehouse-value">
+                                                <span>500</span>
+                                            </div>
+                                            <div class="table__warehouse-value">
+                                                <label class="filter__checkbox-label">
+                                                    <input class="filter__checkbox-input" type="checkbox">
+                                                    <span class="filter__checkbox-name"></span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <ul class="table__warehouse-sublist-second hidden">
+                                            <li class="table__warehouse-item white">
+                                                <div class="table__warehouse-value">
+                                                    <span>500</span>
+                                                </div>
+                                                <div class="table__warehouse-value">
+                                                    <label class="filter__checkbox-label">
+                                                        <input class="filter__checkbox-input" type="checkbox">
+                                                        <span class="filter__checkbox-name"></span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="table__warehouse-item white">
+                                                <div class="table__warehouse-value">
+                                                    <span>500</span>
+                                                </div>
+                                                <div class="table__warehouse-value">
+                                                    <label class="filter__checkbox-label">
+                                                        <input class="filter__checkbox-input" type="checkbox">
+                                                        <span class="filter__checkbox-name"></span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="table__warehouse-item white">
+                                                <div class="table__warehouse-value">
+                                                    <span>500</span>
+                                                </div>
+                                                <div class="table__warehouse-value">
+                                                    <label class="filter__checkbox-label">
+                                                        <input class="filter__checkbox-input" type="checkbox">
+                                                        <span class="filter__checkbox-name"></span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </ul>
+
+                                    <li class="table__warehouse-item table__warehouse-item-last">
+                                        <label class="filter__checkbox-label">
+                                            <input class="filter__checkbox-input" type="checkbox">
+                                            <span class="filter__checkbox-name check-all"></span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="table__warehouse">
+                                <ul class="table__warehouse-list">
+                                    <li class="table__warehouse-item green" data-sticky="sticky">
+                                        <button class="table__warehouse-btn table__btn">
+                                            <span>Prom</span>
+                                            <svg width='14' height='14'>
+                                                <use href='img/sprite/sprite.svg#sorting'></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+
+                                    <li class="table__warehouse-item white">
+                                        <div class="table__warehouse-value">
+                                            <span>500</span>
+                                        </div>
+                                        <div class="table__warehouse-value">
+                                            <label class="filter__checkbox-label">
+                                                <input class="filter__checkbox-input" type="checkbox">
+                                                <span class="filter__checkbox-name"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <ul class="table__warehouse-sublist hidden">
+                                        <li class="table__warehouse-item white">
+                                            <div class="table__warehouse-value">
+                                                <span>500</span>
+                                            </div>
+                                            <div class="table__warehouse-value">
+                                                <label class="filter__checkbox-label">
+                                                    <input class="filter__checkbox-input" type="checkbox">
+                                                    <span class="filter__checkbox-name"></span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <ul class="table__warehouse-sublist-second hidden">
+                                            <li class="table__warehouse-item white">
+                                                <div class="table__warehouse-value">
+                                                    <span>500</span>
+                                                </div>
+                                                <div class="table__warehouse-value">
+                                                    <label class="filter__checkbox-label">
+                                                        <input class="filter__checkbox-input" type="checkbox">
+                                                        <span class="filter__checkbox-name"></span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="table__warehouse-item white">
+                                                <div class="table__warehouse-value">
+                                                    <span>500</span>
+                                                </div>
+                                                <div class="table__warehouse-value">
+                                                    <label class="filter__checkbox-label">
+                                                        <input class="filter__checkbox-input" type="checkbox">
+                                                        <span class="filter__checkbox-name"></span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </ul>
+
+                                    <li class="table__warehouse-item white">
+                                        <div class="table__warehouse-value">
+                                            <span>500</span>
+                                        </div>
+                                        <div class="table__warehouse-value">
+                                            <label class="filter__checkbox-label">
+                                                <input class="filter__checkbox-input" type="checkbox">
+                                                <span class="filter__checkbox-name"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li class="table__warehouse-item white">
+                                        <div class="table__warehouse-value">
+                                            <span>500</span>
+                                        </div>
+                                        <div class="table__warehouse-value">
+                                            <label class="filter__checkbox-label">
+                                                <input class="filter__checkbox-input" type="checkbox">
+                                                <span class="filter__checkbox-name"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <ul class="table__warehouse-sublist hidden">
+                                        <li class="table__warehouse-item white">
+                                            <div class="table__warehouse-value">
+                                                <span>500</span>
+                                            </div>
+                                            <div class="table__warehouse-value">
+                                                <label class="filter__checkbox-label">
+                                                    <input class="filter__checkbox-input" type="checkbox">
+                                                    <span class="filter__checkbox-name"></span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <ul class="table__warehouse-sublist-second hidden">
+                                            <li class="table__warehouse-item white">
+                                                <div class="table__warehouse-value">
+                                                    <span>500</span>
+                                                </div>
+                                                <div class="table__warehouse-value">
+                                                    <label class="filter__checkbox-label">
+                                                        <input class="filter__checkbox-input" type="checkbox">
+                                                        <span class="filter__checkbox-name"></span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </ul>
+
+                                    <li class="table__warehouse-item white">
+                                        <div class="table__warehouse-value">
+                                            <span>500</span>
+                                        </div>
+                                        <div class="table__warehouse-value">
+                                            <label class="filter__checkbox-label">
+                                                <input class="filter__checkbox-input" type="checkbox">
+                                                <span class="filter__checkbox-name"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li class="table__warehouse-item white">
+                                        <div class="table__warehouse-value">
+                                            <span>500</span>
+                                        </div>
+                                        <div class="table__warehouse-value">
+                                            <label class="filter__checkbox-label">
+                                                <input class="filter__checkbox-input" type="checkbox">
+                                                <span class="filter__checkbox-name"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li class="table__warehouse-item white">
+                                        <div class="table__warehouse-value">
+                                            <span>500</span>
+                                        </div>
+                                        <div class="table__warehouse-value">
+                                            <label class="filter__checkbox-label">
+                                                <input class="filter__checkbox-input" type="checkbox">
+                                                <span class="filter__checkbox-name"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <ul class="table__warehouse-sublist hidden">
+                                        <li class="table__warehouse-item white">
+                                            <div class="table__warehouse-value">
+                                                <span>500</span>
+                                            </div>
+                                            <div class="table__warehouse-value">
+                                                <label class="filter__checkbox-label">
+                                                    <input class="filter__checkbox-input" type="checkbox">
+                                                    <span class="filter__checkbox-name"></span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <ul class="table__warehouse-sublist-second hidden">
+                                            <li class="table__warehouse-item white">
+                                                <div class="table__warehouse-value">
+                                                    <span>500</span>
+                                                </div>
+                                                <div class="table__warehouse-value">
+                                                    <label class="filter__checkbox-label">
+                                                        <input class="filter__checkbox-input" type="checkbox">
+                                                        <span class="filter__checkbox-name"></span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="table__warehouse-item white">
+                                                <div class="table__warehouse-value">
+                                                    <span>500</span>
+                                                </div>
+                                                <div class="table__warehouse-value">
+                                                    <label class="filter__checkbox-label">
+                                                        <input class="filter__checkbox-input" type="checkbox">
+                                                        <span class="filter__checkbox-name"></span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="table__warehouse-item white">
+                                                <div class="table__warehouse-value">
+                                                    <span>500</span>
+                                                </div>
+                                                <div class="table__warehouse-value">
+                                                    <label class="filter__checkbox-label">
+                                                        <input class="filter__checkbox-input" type="checkbox">
+                                                        <span class="filter__checkbox-name"></span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </ul>
+
+                                    <li class="table__warehouse-item table__warehouse-item-last">
+                                        <label class="filter__checkbox-label">
+                                            <input class="filter__checkbox-input" type="checkbox">
+                                            <span class="filter__checkbox-name check-all"></span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__btn-right">
+                        <button class="content__btn content__btn-warehouses btn-blue"
+                            data-path="matrix-rearesh-percentage">
+                            <span>Обновить процент</span>
+                        </button>
+                    </div>
+
+                    <div class="modal">
+                        <div class="modal__container" data-target="matrix-refresh">
+                            <div class="modal__wrapper download">
+                                <div class="modal__title">Обновить каталог</div>
+
+                                <div class="modal__message">
+                                    Подтвердите загрузку данных для текущего каталога. При подтверждении, загрузка
+                                    начнется в фоне и Вы получите
+                                    уведомление об окончании.
+                                </div>
+
+                                <div class="modal__bottom">
+                                    <button type="button" class="modal__btn modal__btn--download">Подтвердить</button>
+                                    <button type="button" class="modal__btn modal-close">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="matrix-rearesh-percentage">
+                            <div class="modal__wrapper download">
+                                <div class="modal__title">Введите процент прибыли</div>
+
+                                <div class="modal__message">
+                                    <input type="text">
+                                </div>
+
+                                <div class="modal__bottom">
+                                    <button type="button" class="modal__btn modal__btn--download">Сохранить</button>
+                                    <button type="button" class="modal__btn modal-close">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="warehouse-show-all">
+                            <div class="modal__wrapper download">
+                                <div class="modal__title">Раскрыть категории</div>
+
+                                <div class="modal__message">
+                                    Подтвердите раскрытие всех подкатегорий 1-го и 2-го уровней.
+                                </div>
+
+                                <div class="modal__bottom">
+                                    <button type="button"
+                                        class="modal__btn modal__btn--download btn-show-all">Подтвердить</button>
+                                    <button type="button" class="modal__btn modal-close">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+  <div class="footer">
+    <p class="copyright">© 2022. iBattery CRM. Все права защищены.</p>
+  </div>
+</footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
