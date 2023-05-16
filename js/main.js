@@ -1684,6 +1684,16 @@ function specialConditions() {
                 table.classList.remove('special');
             }
         }
+
+        const cpecialPrice = e.target.closest('.table__special-price');
+        if (cpecialPrice) {
+            e.preventDefault();
+        }
+
+        const cpecialAvailable = e.target.closest('.table__special-available');
+        if (cpecialAvailable) {
+            e.preventDefault();
+        }
     });
 }
 

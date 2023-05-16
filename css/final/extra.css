@@ -104,7 +104,7 @@
   width: 85px;
 }
 .form__info-block--special .form__btn--special {
-  width: 21px;
+  width: 30px;
   height: 44px;
   border: 2px solid #BDDEDA;
   border-radius: 40px;
@@ -113,18 +113,18 @@
 }
 .form__info-block--special .form__btn--special.active::after {
   background: #FDC300;
-  -webkit-transform: translate(-50%, -160%);
-          transform: translate(-50%, -160%);
+  -webkit-transform: translate(-50%, -130%);
+          transform: translate(-50%, -130%);
 }
 .form__info-block--special .form__btn--special::after {
   content: "";
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, 40%);
-          transform: translate(-50%, 40%);
+  -webkit-transform: translate(-50%, 30%);
+          transform: translate(-50%, 30%);
   top: 50%;
   background: #64B6AC;
   -webkit-transition: all 0.2s linear;
@@ -185,6 +185,9 @@
   overflow: visible;
   width: 100%;
 }
+.table.special .table__special-profit {
+  margin-right: 15px;
+}
 .table.on .table__special-profit {
   display: block;
 }
@@ -198,6 +201,9 @@
   overflow: hidden;
   display: none;
   width: 0;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 .table__special-item {
   position: relative;
@@ -209,7 +215,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 30px 10px 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px 23px 10px 15px;
   background-color: var(--white);
   -webkit-box-shadow: 0px 4px 15px -5px rgba(213, 213, 213, 0.64);
           box-shadow: 0px 4px 15px -5px rgba(213, 213, 213, 0.64);
@@ -232,20 +241,38 @@
   background-color: var(--light-green);
   left: -10px;
 }
+.table__special-item:not(:first-of-type) .table__special-price {
+  padding-left: 4px;
+}
+.table__special-item:not(:first-of-type) .table__special-available {
+  padding-left: 7px;
+}
 .table__special-price {
   position: relative;
   z-index: 1;
-  margin-right: 10px;
-  width: 40px;
+  margin-right: 5px;
+  width: 35px;
   display: none;
+}
+.table__special-price:hover .choose__name {
+  cursor: unset;
+}
+.table__special-price:hover .choose__name::before {
+  background-color: var(--white);
 }
 .table__special-available {
   width: 40px;
   display: none;
 }
+.table__special-available:hover .choose__name {
+  cursor: unset;
+}
+.table__special-available:hover .choose__name::before {
+  background-color: var(--white);
+}
 .table__special-profit {
-  margin-right: 10px;
-  width: 60px;
+  margin-right: 5px;
+  width: 24px;
   display: none;
 }
 /*# sourceMappingURL=extra.css.map */
