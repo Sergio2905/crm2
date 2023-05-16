@@ -14,7 +14,7 @@
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   background: #fff;
-  padding: 30px;
+  padding: 15px;
   -webkit-box-shadow: 0px 4px 15px rgba(96, 128, 158, 0.64);
           box-shadow: 0px 4px 15px rgba(96, 128, 158, 0.64);
   border-radius: 10px;
@@ -46,7 +46,7 @@
   }
 }
 .actions__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .actions__btn, .actions__option {
   white-space: nowrap;
@@ -140,11 +140,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 85px;
-  padding: 0 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 75px;
 }
 .form__info-block--special .form__btn--switcher svg {
   fill: var(--green);
@@ -156,9 +155,6 @@
 }
 .form__info-block--special .form__btn--switcher.active span:last-of-type {
   display: none;
-}
-.form__info-block--special .form__btn--switcher span {
-  margin-right: 10px;
 }
 .form__info-block--special .form__btn--switcher span:first-of-type {
   display: none;
@@ -187,6 +183,9 @@
 }
 .table.special .table__special-profit {
   margin-right: 15px;
+}
+.table.special.on .table__special-item.mark::after {
+  display: block;
 }
 .table.on .table__special-profit {
   display: block;
@@ -227,6 +226,17 @@
   height: 60px;
   margin-right: -25px;
 }
+.table__special-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 60px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #FBDB72;
+  display: none;
+}
 .table__special-item:first-of-type {
   background-color: var(--light-green);
   height: 30px;
@@ -243,15 +253,18 @@
 }
 .table__special-item:not(:first-of-type) .table__special-price {
   padding-left: 4px;
+  pointer-events: none;
 }
 .table__special-item:not(:first-of-type) .table__special-available {
   padding-left: 7px;
+  pointer-events: none;
 }
 .table__special-price {
   position: relative;
   z-index: 1;
   margin-right: 5px;
   width: 35px;
+  height: 100%;
   display: none;
 }
 .table__special-price:hover .choose__name {
@@ -262,6 +275,7 @@
 }
 .table__special-available {
   width: 40px;
+  height: 100%;
   display: none;
 }
 .table__special-available:hover .choose__name {
@@ -272,7 +286,13 @@
 }
 .table__special-profit {
   margin-right: 5px;
-  width: 24px;
+  margin-left: -15px;
+  padding-left: 18px;
+  height: 60px;
+  width: 60px;
   display: none;
+  -webkit-box-shadow: 0px 4px 15px -5px rgba(213, 213, 213, 0.64);
+          box-shadow: 0px 4px 15px -5px rgba(213, 213, 213, 0.64);
+  border-radius: 20px;
 }
 /*# sourceMappingURL=extra.css.map */
